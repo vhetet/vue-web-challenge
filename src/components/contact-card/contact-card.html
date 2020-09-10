@@ -1,5 +1,10 @@
 
 <section class="contact-card">
-  <p>{{contact.name}}</p>
+  <img :src="contact.smallImageURL" alt="small image">
+  <div class="favorite">
+    <span v-if="contact.favorite">&#128293;</span>  
+  </div>
+  <h5>{{contact.name}}</h5>
+  <p>{{contact.companyName}}</p>
 </section>
 
