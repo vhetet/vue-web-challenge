@@ -1,5 +1,6 @@
-
 <section class="contact-list">
   <h1>contact-list Component</h1>
+  <div>
+    <contact-card v-for="contact in contacts" :contact="contact" :key="contact.name"></contact-card>
+  </div>
 </section>
-
